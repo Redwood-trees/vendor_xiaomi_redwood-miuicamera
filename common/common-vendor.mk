@@ -5,6 +5,8 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/redwood-miuicamera/common
 
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/redwood-miuicamera/common/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml
 
 PRODUCT_PACKAGES += \
     libcamera_algoup_jni.xiaomi \

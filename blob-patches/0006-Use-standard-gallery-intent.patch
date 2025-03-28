@@ -1,7 +1,7 @@
-From 59d6a66ca4b643f4e060c4904fa3ef8f082750de Mon Sep 17 00:00:00 2001
+From e1a46ac90df7dbdd89f193a6a0bb5eadaabd954f Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Thu, 28 Nov 2024 20:05:39 +0530
-Subject: [PATCH 09/13] Use standard gallery intent
+Subject: [PATCH 6/9] Use standard gallery intent
 
 *Change com.android.camera.action.REVIEW to android.provider.action.REVIEW
 ---
@@ -45,5 +45,5 @@ index 5ddc84ed4..a3ef69781 100644
  .field public static final REVIEW_ACTION_IN_MULTI_WINDOW:Ljava/lang/String; = "com.android.camera.action.SPILIT_SCREEN_REVIEW"
  
 -- 
-2.47.1
+2.49.0
 

@@ -14,18 +14,37 @@
 # limitations under the License.
 #
 
+# Inherit from the proprietary version
+$(call inherit-product, vendor/xiaomi/redwood-miuicamera/common/common-vendor.mk)
+
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     MiuiCamera
+	
+# MiVideoPlayer
+TARGET_INCLUDES_MIUI_VIDEOPLAYER ?= true
+
+ifeq ($(TARGET_INCLUDES_MIUI_VIDEOPLAYER),true)
+PRODUCT_PACKAGES += \
+    MiuiVideoPlayer
+	
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
+endif
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/xiaomi/redwood-miuicamera/overlay
+
+PRODUCT_PACKAGES += \
+    MiuiCameraOverlay \
+    MiuiCameraOverlayLos \
+    MiuiCameraOverlayAosp
 
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
     vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
-
-# Sysconfig
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/redwood-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -39,35 +58,16 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
     ro.com.google.lens.oem_camera_package=com.android.camera
 
-# Overlay
-PRODUCT_PACKAGES += \
-    MiuiCameraOverlay \
-    MiuiCameraOverlayLos \
-    MiuiCameraOverlayAosp
-
 # QR Camera
 PRODUCT_PACKAGES += \
     MlkitBarcodeUI \
     VisionBarcode \
     MiuiQRCameraOverlay
-	
-# MiVideoPlayer
-TARGET_INCLUDES_MIUI_VIDEOPLAYER ?= true
-
-ifeq ($(TARGET_INCLUDES_MIUI_VIDEOPLAYER),true)
-PRODUCT_PACKAGES += \
-    MiuiVideoPlayer
-	
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
-
-endif
 
 # Shim
  PRODUCT_PACKAGES += \
      libgui_shim_miuicamera
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/xiaomi/redwood-miuicamera/overlay
-
-$(call inherit-product, vendor/xiaomi/redwood-miuicamera/common/common-vendor.mk)
+	 
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/redwood-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml

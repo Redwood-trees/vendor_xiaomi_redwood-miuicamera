@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     VisionBarcode \
     MiuiQRCameraOverlay
 
+# Shim
+ PRODUCT_PACKAGES += \
+     libgui_shim_miuicamera
+
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/xiaomi/redwood-miuicamera/overlay
 

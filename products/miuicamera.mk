@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 
 endif
 
+# Shim
+ PRODUCT_PACKAGES += \
+     libgui_shim_miuicamera
+
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/xiaomi/redwood-miuicamera/overlay
 

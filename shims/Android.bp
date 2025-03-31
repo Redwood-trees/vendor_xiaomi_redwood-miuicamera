@@ -5,7 +5,7 @@
 //
 
 cc_library_shared {
-    name: "libgui_shim_leicamera",
-    srcs: ["libgui_shim_leicamera.c"],
+    name: "libgui_shim_miuicamera",
+    srcs: ["libgui_shim_miuicamera.c"],
     compile_multilib: "64",
 }

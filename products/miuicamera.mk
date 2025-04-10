@@ -55,6 +55,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.log.tag.CAM_BoostFrameworkImpl=S \
     ro.miui.notch=1 \
     ro.product.mod_device=redwood_global \
+    ro.miui.build.region=global \
     persist.vendor.camera.privapp.list=com.android.camera \
     ro.com.google.lens.oem_camera_package=com.android.camera
 

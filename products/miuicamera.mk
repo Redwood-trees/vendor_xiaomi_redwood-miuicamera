@@ -63,10 +63,6 @@ PRODUCT_PACKAGES += \
     MlkitBarcodeUI \
     VisionBarcode \
     MiuiQRCameraOverlay
-
-# Shim
- PRODUCT_PACKAGES += \
-     libgui_shim_miuicamera
 	 
 # Sysconfig
 PRODUCT_COPY_FILES += \

@@ -20,6 +20,5 @@ include vendor/xiaomi/redwood-miuicamera/common/BoardConfigVendor.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/xiaomi/redwood-miuicamera/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/redwood-miuicamera/sepolicy/vendor
 
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_INCLUDES_MIUI_CAMERA := true
 TARGET_USES_MIUI_CAMERA := true

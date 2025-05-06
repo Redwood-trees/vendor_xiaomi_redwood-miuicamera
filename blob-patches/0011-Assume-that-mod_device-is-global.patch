@@ -1,7 +1,7 @@
-From 22973281cf85bc1e0374e0537d47eec00233dfcb Mon Sep 17 00:00:00 2001
+From 55072e41eb24843541632cac7667eb4bd09f0b34 Mon Sep 17 00:00:00 2001
 From: YagizErdemir06 <erdemiryagiz@proton.me>
 Date: Sat, 3 May 2025 14:06:59 +0300
-Subject: [PATCH 12/12] Assume that mod_device is global
+Subject: [PATCH 11/11] Assume that mod_device is global
 
 Otherwise, the app tries to start a custom permissions dialog which
 has dependencies on HyperOS Security Center app.

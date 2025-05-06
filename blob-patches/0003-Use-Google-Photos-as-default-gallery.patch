@@ -1,7 +1,7 @@
 From c7c73f963f24c69152a07aa858b9ad0a96951e7e Mon Sep 17 00:00:00 2001
 From: ralph950412 <ralph950412@gmail.com>
 Date: Sun, 28 Jul 2024 00:59:03 +0800
-Subject: [PATCH 03/12] Use Google Photos as default gallery
+Subject: [PATCH 03/11] Use Google Photos as default gallery
 
 Signed-off-by: Tashfin Shakeer Rhythm <tashfinshakeerrhythm@gmail.com>
 ---

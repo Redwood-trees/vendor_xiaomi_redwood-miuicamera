@@ -1,7 +1,7 @@
 From 79e469edd2254696525845cdb5c3f8ac701d0a24 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Thu, 9 Jan 2025 23:47:48 +0100
-Subject: [PATCH 10/11] Redo shortcut icon drawables
+Subject: [PATCH 10/12] Redo shortcut icon drawables
 
 ---
  res/drawable/shortcut_capture_mode.xml      | 21 ++++++++++++++++-----

@@ -1,7 +1,7 @@
 From 650051f3e10ec7abe80fe8e9de1aa000c3f3624b Mon Sep 17 00:00:00 2001
 From: Alexander Winkowski <dereference23@outlook.com>
 Date: Thu, 18 Apr 2024 11:47:56 +0200
-Subject: [PATCH 05/11] Disable `BackupAgent`
+Subject: [PATCH 05/12] Disable `BackupAgent`
 
 * Doesn't work on AOSP
 

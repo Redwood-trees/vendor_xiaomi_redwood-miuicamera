@@ -32,9 +32,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood-miuicamera/common/proprietary/vendor/etc/camera/128_Sepia.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/128_Sepia.png
 
 PRODUCT_PACKAGES += \
+    libOpenCL_system \
     libcamera_algoup_jni.xiaomi \
     libcamera_mianode_jni.xiaomi \
+    libcameraimpl \
     libmicampostproc_client \
+    libmqsas \
+    libopencl-camera \
     vendor.xiaomi.hardware.campostproc@1.0-system \
-    libOpenCL_system \
     MiuiCamera

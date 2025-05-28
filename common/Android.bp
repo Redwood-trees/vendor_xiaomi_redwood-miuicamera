@@ -93,6 +93,22 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmodemenhance_aidl_client",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmodemenhance_aidl_client.so"],
+			shared_libs: ["libbinder_shim", "libbase", "libcutils", "libutils", "libbinder", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmqsas",
 	owner: "xiaomi",
 	strip: {

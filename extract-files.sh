@@ -71,6 +71,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libgui_shim_miuicamera.so" "${2}" || "${PATCHELF}" --add-needed libgui_shim_miuicamera.so "${2}"
             ;;
+        system/lib64/libmodemenhance_aidl_client.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed libbinder_shim.so "${2}"
+            ;;
         system/lib64/libmicampostproc_client.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --remove-needed libhidltransport.so "${2}"

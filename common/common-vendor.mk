@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     libcamera_mianode_jni.xiaomi \
     libcameraimpl \
     libmicampostproc_client \
+    libmodemenhance_aidl_client \
     libmqsas \
     libopencl-camera \
     vendor.xiaomi.hardware.campostproc@1.0-system \

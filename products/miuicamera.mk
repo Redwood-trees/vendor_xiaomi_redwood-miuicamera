@@ -20,17 +20,6 @@ $(call inherit-product, vendor/xiaomi/redwood-miuicamera/common/common-vendor.mk
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     MiuiCamera
-	
-# MiVideoPlayer
-TARGET_INCLUDES_MIUI_VIDEOPLAYER ?= true
-
-ifeq ($(TARGET_INCLUDES_MIUI_VIDEOPLAYER),true)
-PRODUCT_PACKAGES += \
-    MiuiVideoPlayer
-	
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
-endif
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -64,7 +53,7 @@ PRODUCT_PACKAGES += \
     MlkitBarcodeUI \
     VisionBarcode \
     MiuiQRCameraOverlay
-	 
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml

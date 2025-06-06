@@ -36,7 +36,6 @@ vendor/etc/camera/127_Creamy.png
 vendor/etc/camera/128_Sepia.png
 
 # Device OpenCL Prebuilts
-system_ext/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so
 system_ext/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so
 
 # Device Prebuilts

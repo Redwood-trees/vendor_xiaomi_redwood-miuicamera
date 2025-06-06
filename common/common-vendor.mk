@@ -42,3 +42,14 @@ PRODUCT_PACKAGES += \
     libopencl-camera \
     vendor.xiaomi.hardware.campostproc@1.0-system \
     MiuiCamera
+
+PRODUCT_PACKAGES += \
+    libmqsas_libmqsas_symlink64 \
+    libOpenCL_system_libOpenCL_system_symlink64 \
+    libcamera_algoup_jni.xiaomi_libcamera_algoup_jni.xiaomi_symlink64 \
+    libcamera_mianode_jni.xiaomi_libcamera_mianode_jni.xiaomi_symlink64 \
+    libcameraimpl_libcameraimpl_symlink64 \
+    libmicampostproc_client_libmicampostproc_client_symlink64 \
+    libmodemenhance_aidl_client_libmodemenhance_aidl_client_symlink64 \
+    libopencl-camera_libopencl-camera_symlink64 \
+    vendor.xiaomi.hardware.campostproc@1.0_vendor.xiaomi.hardware.campostproc@1.0_symlink64

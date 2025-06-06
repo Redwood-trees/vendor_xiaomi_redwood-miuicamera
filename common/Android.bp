@@ -165,3 +165,57 @@ android_app_import {
 	privileged: true,
 }
 
+install_symlink {
+	name: "libmqsas_libmqsas_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libmqsas.so",
+	symlink_target: "/system/lib64/libmqsas.so",
+}
+
+install_symlink {
+	name: "libOpenCL_system_libOpenCL_system_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libOpenCL_system.so",
+	symlink_target: "/system/lib64/libOpenCL_system.so",
+}
+
+install_symlink {
+	name: "libcamera_algoup_jni.xiaomi_libcamera_algoup_jni.xiaomi_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so",
+	symlink_target: "/system/lib64/libcamera_algoup_jni.xiaomi.so",
+}
+
+install_symlink {
+	name: "libcamera_mianode_jni.xiaomi_libcamera_mianode_jni.xiaomi_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so",
+	symlink_target: "/system/lib64/libcamera_mianode_jni.xiaomi.so",
+}
+
+install_symlink {
+	name: "libcameraimpl_libcameraimpl_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libcameraimpl.so",
+	symlink_target: "/system/lib64/libcameraimpl.so",
+}
+
+install_symlink {
+	name: "libmicampostproc_client_libmicampostproc_client_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libmicampostproc_client.so",
+	symlink_target: "/system/lib64/libmicampostproc_client.so",
+}
+
+install_symlink {
+	name: "libmodemenhance_aidl_client_libmodemenhance_aidl_client_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libmodemenhance_aidl_client.so",
+	symlink_target: "/system/lib64/libmodemenhance_aidl_client.so",
+}
+
+install_symlink {
+	name: "libopencl-camera_libopencl-camera_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/libopencl-camera.so",
+	symlink_target: "/system/lib64/libopencl-camera.so",
+}
+
+install_symlink {
+	name: "vendor.xiaomi.hardware.campostproc@1.0_vendor.xiaomi.hardware.campostproc@1.0_symlink64",
+	installed_location: "priv-app/MiuiCamera/lib/arm64/vendor.xiaomi.hardware.campostproc@1.0.so",
+	symlink_target: "/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so",
+}
+

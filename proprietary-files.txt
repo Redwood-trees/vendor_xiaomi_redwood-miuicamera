@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from redwood global OS2.0.3.0.UMSMIXM
+# All unpinned blobs below are extracted from redwood global OS2.0.4.0.UMSMIXM
 
 # Camera app
 product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Flash,Aperture
